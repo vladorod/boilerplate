@@ -1,5 +1,7 @@
-# Simple boilerplate (webpack, sass, pug)
+# Simple boilerplate (webpack, sass, pug) 
 My boilerplate
+
+workspace for Visual Studio Code
 
 <ul>
 <h2>Command</h2> 
