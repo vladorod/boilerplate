@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "start-d": "webpack -d",
+    "build": "webpack -b"
   },
   "dependencies": {
     "css-loader": "^3.2.0",

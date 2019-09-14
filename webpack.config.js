@@ -1,13 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
-
+ 
 const css = require('./webpack/sass&css.js')
-
+ 
 
 module.exports = merge([
     {
-    mode: "production",
     entry: './src/app.js',
     output: {
         path: path.join(__dirname,'dist'),
@@ -76,7 +75,14 @@ module.exports = merge([
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
-        port: 9000
+        port: 9000,
+        open: true,
+        proxy: {
+            '/api': {
+              target: 'https://google.com/',
+              secure: false
+            },
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -86,5 +92,5 @@ module.exports = merge([
         }),
     ]
 },
-css()
+css(),
 ]);
