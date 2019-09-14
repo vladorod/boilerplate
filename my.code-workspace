@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/*.log": true,
+			"node_modules": true,
+			"**/*.code-workspace": true,
+			"yarn.lock": true
+        }
+	}
+}
